@@ -12,14 +12,14 @@ export async function getData() {
         }
 
         const json = await response.json();
-        console.log(json);  // Verifica los datos en la consola del navegador
+        console.log(json);  
         
         if (json['Error Message']) {
             throw new Error(json['Error Message']);
         }
 
         const timeSeries = json['Time Series (Daily)'];
-        const labels = Object.keys(timeSeries).slice(0, 30).reverse();  // Últimos 30 días
+        const labels = Object.keys(timeSeries).slice(0, 30).reverse();  
         const values = labels.map(label => parseFloat(timeSeries[label]['4. close']));
 
         return {

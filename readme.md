@@ -31,4 +31,3 @@ Puedes acceder al proyecto desplegado en vivo en Dashboard Financiero.
 Notas Adicionales
 Asegúrate de tener una conexión a Internet activa para cargar los datos financieros en tiempo real.
 Personaliza el proyecto según tus necesidades añadiendo más funcionalidades o ajustando el diseño en el archivo styles.css.
-Con estas instrucciones, los usuarios podrán entender fácilmente cómo instalar, ejecutar y explorar tu proyecto de dashboard financiero. Ajusta cualquier detalle adicional según lo necesites y continúa mejorando tu aplicación conforme recibas feedback y avances en tu desarrollo.

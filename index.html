@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Clima</h1>
+    </header>
+    <main>
+        <section class="city-selector">
+            <select id="city-select">
+                <option value="">Seleccione una ciudad</option>
+                <option value="Madrid,ES">Madrid, España</option>
+                <option value="New York,US">Nueva York, EE.UU.</option>
+                <option value="Tokyo,JP">Tokio, Japón</option>
+                <option value="London,UK">Londres, Reino Unido</option>
+                <option value="Paris,FR">París, Francia</option>
+                <option value="Roma,IT">Roma, Italia</option>
+                <option value="Berlín,DE">Berlín, Alemania</option>
+            </select>
+        </section>
+        <section class="weather-card">
+            <h2 id="city-name"></h2>
+            <p id="weather-description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+        </section>
+        <section class="charts">
+            <canvas id="temperature-chart"></canvas>
+            <canvas id="humidity-chart"></canvas>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

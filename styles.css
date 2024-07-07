@@ -1,19 +1,33 @@
+/* Estilos generales */
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
-    background-color: #ffffff;
+    padding: 0;
 }
+
+
 
 .container {
-    text-align: center;
-    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+
+
 canvas {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 }

@@ -1,17 +1,28 @@
-import { getWeatherData } from './api.js';
-import { createCitySelector } from './components/CitySelector.js';
-import { createWeatherCard } from './components/WeatherCard.js';
-import { createCharts } from './charts.js';
+// script.js
+import { getData } from './data.js';
 
-const citySelect = document.getElementById('city-select');
-const weatherCardContainer = document.querySelector('.weather-card');
-const chartsContainer = document.querySelector('.charts');
-
-createCitySelector(citySelect);
-
-citySelect.addEventListener('change', async () => {
-    const city = citySelect.value;
-    const weatherData = await getWeatherData(city);
-    createWeatherCard(weatherCardContainer, weatherData);
-    createCharts(chartsContainer, weatherData);
+document.addEventListener('DOMContentLoaded', async () => {
+    const data = await getData();
+    const ctx = document.getElementById('myChart').getContext('2d');
+    
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: data.labels,
+            datasets: [{
+                label: 'Cierre Diario de MSFT',
+                data: data.values,
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
 });

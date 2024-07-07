@@ -1,26 +1,19 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.city-selector {
-    margin: 20px;
+.container {
+    text-align: center;
+    width: 80%;
 }
 
-.weather-card {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.charts {
-    margin: 20px;
-}
-
-#temperature-chart, #humidity-chart {
-    width: 400px;
-    height: 200px;
+canvas {
+    max-width: 100%;
 }

@@ -1,5 +1,4 @@
-// script.js
-import { getData } from './data.js';
+
 
 // script.js
 import { getData } from './data.js';

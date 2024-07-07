@@ -28,6 +28,4 @@ GitHub - Proyecto3
 Despliegue en GitHub Pages:
 Puedes acceder al proyecto desplegado en vivo en Dashboard Financiero.
 
-Notas Adicionales
-Asegúrate de tener una conexión a Internet activa para cargar los datos financieros en tiempo real.
-Personaliza el proyecto según tus necesidades añadiendo más funcionalidades o ajustando el diseño en el archivo styles.css.
+

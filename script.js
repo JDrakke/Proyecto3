@@ -1,5 +1,3 @@
-
-
 // script.js
 import { getData } from './data.js';
 

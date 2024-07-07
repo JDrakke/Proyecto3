@@ -1,6 +1,9 @@
 // script.js
 import { getData } from './data.js';
 
+// script.js
+import { getData } from './data.js';
+
 document.addEventListener('DOMContentLoaded', async () => {
     const data = await getData();
     const ctx = document.getElementById('myChart').getContext('2d');
